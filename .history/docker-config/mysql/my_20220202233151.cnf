@@ -1,0 +1,34 @@
+
+＃MySQLDandの設定
+[mysqld]
+文字セットサーバー= utf8mb4
+照合サーバー= utf8mb4_bin
+
+＃タイム
+default-time-zone = SYSTEM
+log_timestamps = SYSTEM
+
+＃mysql8.0用に認証された
+default-authentication-plugin = mysql_native_password
+
+
+＃エラーエラー
+＃log-error = /var/log/mysql/mysql-error.log
+
+＃スロー
+slow_query_log = 1
+slow_query_log_file = /var/log/mysql/mysql-slow.log
+long_query_time = 5.0
+log_queries_not_using_indexes = 0
+
+＃説明
+general_log = 1
+general_log_file = /var/log/mysql/mysql-query.log
+
+＃mysqlオプションの設定
+[mysql]
+デフォルトの文字セット= utf8mb4
+
+＃mysqlSCツールの設定
+[クライアント]
+デフォルトの文字セット= utf8mb4
